@@ -5,7 +5,7 @@ get:
 	@flutter pub get
 
 upgrade: 
-	@echo "╠ Getting dependencies..."
+	@echo "╠ Upgrading dependencies..."
 	@flutter pub upgrade
 
 format:
@@ -23,6 +23,10 @@ br:
 intl:
 	@echo "╠ Generating language strings ..."
 	@flutter pub run intl_utils:generate && flutter format lib/l10n -l 100
+
+analyze:
+	@echo "╠ Analyzing ..."
+	@flutter analyze
 
 test:
 	@echo "╠ Do tests..."

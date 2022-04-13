@@ -1,0 +1,16 @@
+pre-commit:
+  commands:
+    pretty:
+      glob: "*.dart"
+      run: flutter format {all_files} -l 100
+
+pre-push:
+  parallel: true
+  commands:
+    skip:
+      - merge
+      - rebase
+    tests:
+      run: flutter test
+    linter:
+      run: flutter analyze
