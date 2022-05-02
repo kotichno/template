@@ -24,6 +24,10 @@ intl:
 	@echo "╠ Generating language strings ..."
 	@flutter pub run intl_utils:generate && flutter format lib/l10n -l 100
 
+splash:
+	@echo "╠ Generating splash screen ..."
+	@flutter pub run flutter_native_splash:create
+
 analyze:
 	@echo "╠ Analyzing ..."
 	@flutter analyze
