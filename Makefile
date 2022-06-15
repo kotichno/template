@@ -8,6 +8,10 @@ upgrade:
 	@echo "╠ Upgrading dependencies..."
 	@flutter pub upgrade
 
+outdated: 
+	@echo "╠ Check dependencies to upgrade..."
+	@flutter pub outdated
+
 format:
 	@echo "╠ Formatting the code"
 	@flutter format . -l 100
