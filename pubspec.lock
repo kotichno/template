@@ -477,7 +477,7 @@ packages:
     source: hosted
     version: "2.1.0"
   path:
-    dependency: transitive
+    dependency: "direct dev"
     description:
       name: path
       url: "https://pub.dartlang.org"
@@ -629,7 +629,7 @@ packages:
     source: hosted
     version: "1.21.1"
   test_api:
-    dependency: transitive
+    dependency: "direct dev"
     description:
       name: test_api
       url: "https://pub.dartlang.org"
